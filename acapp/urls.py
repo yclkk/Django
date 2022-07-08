@@ -18,6 +18,6 @@ from django.urls import path, include
 
 
 urlpatterns = [
-   # path('', include('game.urls')),
-    path('admin/', admin.site.urls),
+    path('', include('game.urls.index')), # 如果访问空，那就去game.url.index
+    path('admin/', admin.site.urls),  # 如果访问admin/那就去admin.site.urls
 ]
